@@ -6,16 +6,17 @@ function Fav(){
     const {fav} = usemoviecontext();
     if(fav) {
 
-        return 
+        return (
         <div className="favorites">
             <h2>Your Favorites</h2>
             <div className="movie-grid">
                 {fav.map((movie) =>(
                 <Movieslide movie={movie} key={movie.id}/>
-               ) )}
+               ) )} 
 
             </div>
             </div>
+        );
     }
     return(
         <div className="favorites-empty">
